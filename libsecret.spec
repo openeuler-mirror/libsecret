@@ -1,7 +1,7 @@
 %global release_version %%(echo %{version} | awk -F. '{print $1"."$2}')
 Name:           libsecret
-Version:        0.18.6
-Release:        4
+Version:        0.20.3
+Release:        1
 Summary:        Library for storing and retrieving passwords and other secrets
 License:        LGPLv2+
 URL:            https://wiki.gnome.org/Projects/Libsecret
@@ -72,6 +72,12 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %doc %{_datadir}/gtk-doc/
 
 %changelog
+* Mon Jul 27 2020wenzhanli<wenzhanli2@huawei.com> - 0.20.3-1
+- Type:bugfix
+- ID:NA
+- SUG:NA
+- DESC:version update 0.20.3
+
 * Fri Sep 27 2019 openEuler Buildteam <buildteam@openeuler.org> - 0.18.6-4
 - Correct requires
 
