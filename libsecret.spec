@@ -1,6 +1,6 @@
 %global release_version %%(echo %{version} | awk -F. '{print $1"."$2}')
 Name:           libsecret
-Version:        0.20.3
+Version:        0.20.4
 Release:        1
 Summary:        Library for storing and retrieving passwords and other secrets
 License:        LGPLv2+
@@ -72,6 +72,9 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %doc %{_datadir}/gtk-doc/
 
 %changelog
+* Tue Jan 26 2021 liudabo <liudabo1@huawei.com> - 0.20.4-1
+- upgrade version to 0.20.4
+
 * Mon Jul 27 2020wenzhanli<wenzhanli2@huawei.com> - 0.20.3-1
 - Type:bugfix
 - ID:NA
